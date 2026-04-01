@@ -1,0 +1,8 @@
+{
+  "nombre": "Silla Ergonomica",
+  "categoria": "MUE-01",
+  "precio": 250.0,
+  "stock": 10,
+  "stock_minimo": 5,
+  "activo": true
+}

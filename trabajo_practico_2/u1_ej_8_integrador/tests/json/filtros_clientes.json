@@ -1,0 +1,9 @@
+{
+  "skip": 0,
+  "limit": 10,
+  "ciudad": "Cordoba",
+  "edad_min": 25,
+  "edad_max": 40,
+  "riesgo": "bajo",
+  "buscar": "carla"
+}

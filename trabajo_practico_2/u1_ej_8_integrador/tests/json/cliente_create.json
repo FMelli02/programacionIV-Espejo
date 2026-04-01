@@ -1,0 +1,9 @@
+{
+  "nombre": "Carla Dominguez",
+  "email": "carla@email.com",
+  "ciudad": "Cordoba",
+  "edad": 35,
+  "limite_credito": 120000,
+  "saldo_pendiente": 10000,
+  "activo": true
+}
