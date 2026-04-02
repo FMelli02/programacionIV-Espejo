@@ -1,0 +1,83 @@
+@baseUrl = http://localhost:8000
+
+### ===== CATEGORIAS =====
+
+### Listar categorías
+GET {{baseUrl}}/categorias
+
+### Crear categoría
+POST {{baseUrl}}/categorias
+Content-Type: application/json
+
+{
+  "nombre": "Pizzas",
+  "descripcion": "Pizzas artesanales con masa fresca"
+}
+
+### Actualizar categoría (reemplazar ID)
+PUT {{baseUrl}}/categorias/1
+Content-Type: application/json
+
+{
+  "nombre": "Pizzas Premium",
+  "descripcion": "Pizzas con ingredientes gourmet"
+}
+
+### Eliminar categoría (reemplazar ID)
+DELETE {{baseUrl}}/categorias/1
+
+
+### ===== PRODUCTOS =====
+
+### Listar productos
+GET {{baseUrl}}/productos
+
+### Crear producto
+POST {{baseUrl}}/productos
+Content-Type: application/json
+
+{
+  "nombre": "Muzzarella",
+  "descripcion": "Pizza clásica",
+  "preciobase": "8500",
+  "imagenurl": [
+    "https://imagenes-ejemplo.com/muzza-1.jpg"
+  ],
+  "disponible": true
+}
+
+### Actualizar producto (reemplazar ID)
+PUT {{baseUrl}}/productos/1
+Content-Type: application/json
+
+{
+  "nombre": "Muzzarella Grande",
+  "descripcion": "Pizza clásica tamaño grande",
+  "preciobase": "9900",
+  "imagenurl": [
+    "https://imagenes-ejemplo.com/muzza-1.jpg",
+    "https://imagenes-ejemplo.com/muzza-2.jpg"
+  ],
+  "disponible": true
+}
+
+### Eliminar producto (reemplazar ID)
+DELETE {{baseUrl}}/productos/1
+
+
+### ===== PRODUCTO-CATEGORIA =====
+
+### Listar relaciones
+GET {{baseUrl}}/producto-categorias
+
+### Crear relación (reemplazar IDs existentes)
+POST {{baseUrl}}/producto-categorias
+Content-Type: application/json
+
+{
+  "productoid": 1,
+  "categoriaid": 2
+}
+
+### Eliminar relación (reemplazar IDs existentes)
+DELETE {{baseUrl}}/producto-categorias/1/2
